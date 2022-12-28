@@ -17,9 +17,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         {/* we can add script tag here but it causes slow loading so we should use script tag */}
       </Head>
-      <Script src='sc.js' strategy='lazyOnload'></Script>
+      <nav className={styles.nav}>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Blogs</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
       <main className={styles.main}>
-        <div className={styles.description}>
+
+        {/* <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>pages/index.js</code>
@@ -41,9 +49,9 @@ export default function Home() {
               />
             </a>
           </div>
-        </div>
+        </div> */}
 
-        <div className={styles.center}>
+        {/* <div className={styles.center}>
           <Image
             className={styles.logo}
             src="/next.svg"
@@ -61,9 +69,9 @@ export default function Home() {
               priority
             />
           </div>
-        </div>
+        </div> */}
 
-        <div className={styles.grid}>
+        {/* <div className={styles.grid}>
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
@@ -120,7 +128,7 @@ export default function Home() {
               with&nbsp;Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </main>
     </>
   )
