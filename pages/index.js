@@ -3,6 +3,9 @@ import Script from 'next/script'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
+// import '../styles/style.css' // we can not import file like this in our pages but we can import bootstrap like
+// css or else we use this css as global css
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,10 +22,10 @@ export default function Home() {
       </Head>
       <nav className={styles.nav}>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Blogs</li>
-          <li>Contact</li>
+          <Link href='/'><li>Home</li></Link>
+          <Link href='/about'><li>About</li></Link>
+          <Link href='/blogs'><li>Blogs</li></Link>
+          <Link href='/contact'><li>Contact</li></Link>
         </ul>
       </nav>
       <main className={styles.main}>
