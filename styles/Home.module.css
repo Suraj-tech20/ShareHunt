@@ -1,6 +1,3 @@
-.nav {
-  background-color: rgb(178, 231, 231);
-}
 .nav ul {
   display: flex;
   justify-content: center;
@@ -10,10 +7,15 @@
 .nav ul li {
   margin: 20px;
   padding: 5px;
-  background-color: rgb(140, 236, 236);
-  border: 1px solid rgb(17, 49, 53);
+  background-color: rgba(203, 199, 199, 0.53);
+  box-shadow: 0 0 5px 5px rgb(230, 227, 227);
   border-radius: 4px;
   cursor: pointer;
+}
+
+.nav ul li:hover {
+  background-color: rgba(203, 199, 199);
+  box-shadow: 0 0 10px 10px rgb(203, 199, 199);
 }
 
 .main {
@@ -92,11 +94,10 @@
 
 .center {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 4rem 0;
 }
+
 
 .center::before {
   background: var(--secondary-glow);
@@ -122,6 +123,11 @@
   transform: translateZ(0);
 }
 
+.homeimg {
+  margin: auto;
+  width: 120%;
+  height: auto;
+}
 .logo,
 .thirteen {
   position: relative;
